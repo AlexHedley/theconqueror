@@ -1,0 +1,74 @@
+<!--The Conqueror Virtual Challenges Medal Checklist -->
+<!-- https://codepen.io/Ricardo373/pen/LYjdPLX -->
+<!-- https://codepen.io/Ricardo373 -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="The Conqueror Virtual Challenges Medal Checklist">
+    <meta name="keywords" content="Conqueror,Virtual,Challenges,Medal,Checklist">
+    <meta name="author" content="Ricardo373">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <title>The Conqueror Virtual Challenges Medal Checklist</title>
+  </head>
+  <body ng-app="myApp">
+    <div class="container header">
+        <img src="https://i.imgur.com/dBBowuo.png"/>
+    <div class="other-tools"><b>Other conqueror tools: </b><a href="https://codepen.io/Ricardo373/full/vYJrdKR" target="_blank">Conversion Chart Calculator</a></div>
+    </div>
+        
+    <div class="container checklist">
+        <div class="image-renderer">
+            <button type="button" class="btn btn-primary">Generate image</button>
+        </div>
+        <h3>The Conqueror Virtual Callenges checklist <span class="updated">Updated!</span></h3>
+    
+    <!--<b>Due to an update to how Codepen works, this page is no longer functioning like it did. Please use the original version on codeply at <a href="https://www.codeply.com/v/EVGjpwlW2D" target="_blank">https://www.codeply.com/v/EVGjpwlW2D</a></b>
+    <br/><br/>-->
+    
+        <p>Thank you for all of your feedback! Please read below how the updated version functions.</p>
+        <p>Click or tap the medals below to mark them.</p>
+        <ul>
+            <li>Click or tap once to mark the challenge "bought" (Black & white, thick grey border)</li>
+            <li>Click or tap it again to mark it "in progress" (Faded colors, thin red border)</li>
+            <li>Click or tap it a third time to set it to "conquered" (Fully colored, no border)</li>
+            <li>Finally click or tap it again to unmark the challenge (Black & white, no border)</li>
+        </ul>
+        <p>You can show or hide the discontinued medals that you have not conquered (and are not bought or in progress) by checking the checkbox below.</p>
+        <p>When you are done, click on the "generate image" button to create a single image of your collection that you can save.</p>
+        
+        <div class="hide-dc">Hide unconquered discontinued medals <input type="checkbox" name="toggle-dc" /></div>
+
+        <div class="row medals"></div>
+    </div>
+
+    <canvas id="medal-canvas" width="560" height="800"></canvas>
+
+    <div class="container export">
+        <div class="return">
+            <button type="button" class="btn btn-primary">Return</button>
+        </div>
+        <h3>Image generated.</h3>
+        <p>Right-click the image below and select "save image as" to save it. For mobile devices, tap and hold on the image to bring up the menu. Then select "Download image" (wording may vary among different devices).</p>
+        <p>Perfect for sharing in the Facebook group!</p>
+        <div class="image-container"></div>
+    </div>
+
+    <div class="container footer">
+        This page is not associated in any way with the Conqueror Virtual Challenges.<br/>
+        The Conqueror Virtual Challenges, its logo and associated images are owned by ACTIONARY LIMITED
+    </div>
+
+    <!-- <script src="https://cdn.skypack.dev/bootstrap@5.1.3"></script> -->
+    <!-- <script src="https://cdn.skypack.dev/jquery@3.6.0"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
